@@ -9,11 +9,3 @@ migrate-down:
 test:
 	go test ./... -coverprofile coverage.out
 	rm -rf coverage.out
-
-
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin git@github.com:rrafids/dbaas-boilerplate.git
-git push -u origin main
