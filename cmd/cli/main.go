@@ -23,7 +23,9 @@ var (
 						Datastore: c.Args().Get(0),
 						Path:      c.Args().Get(1),
 					}
-					return generator.Generate(datastores.GetDatastoreObject(c.Args().Get(0)))
+
+					// This will call cli handler function
+					return cliHandler.Generate(datastores.GetDatastoreObject(c.Args().Get(0)))
 				},
 			},
 		},

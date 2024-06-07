@@ -1,5 +1,9 @@
 package usecase
 
+type LambdaManagerUsecase interface {
+	LoadObject(ctx context.Context, parameter) (errResponse *port.ErrorResponse)
+}
+
 type LambdaManagerUsecase struct {
 	LambdaManagerHttpRepository httpRepository.LambdaManagerHttpRepository
 }
